@@ -1,0 +1,18 @@
+<html>
+<script>
+function add()
+{
+
+let a=Number(document.getElementById('a').value);
+let b=Number(document.getElementById('b').value);
+c=+a + +b;
+document.getElementById('s').innerHTML="add is="+c;
+}
+</script>
+<body>
+Enter tha value of A<input type="text" id="a"><br><br>
+Enter tha value of B<input type="text" id="b"><br><br>
+<input type="submit" onclick="add()">
+<p id="s">show result</p>
+</body>
+</html>
