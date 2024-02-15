@@ -1,0 +1,53 @@
+<html>
+   <style>
+    textarea
+{
+resize:none;
+}
+    </style>
+    <script>
+    function copy()
+    {
+    if(ch.checked==true)
+    {
+    document.getElementById('b').value=document.getElementById('a').value;
+    document.getElementById('d').value=document.getElementById('c').value;
+    document.getElementById('f').value=document.getElementById('e').value;
+    document.getElementById('h').value=document.getElementById('g').value;
+    document.getElementById('j').value=document.getElementById('i').value;
+    }
+    else
+    {
+    document.getElementById('b').value='';
+    document.getElementById('d').value='';
+    document.getElementById('f').value='';
+    document.getElementById('h').value='';
+    document.getElementById('j').value='';
+    }
+    }
+    </script>
+    
+    <body>
+    
+    <h2 style="color: green;">Copy Current Address to Permanent Address</h2>
+    <div>
+    <h3>Current Address</h3>
+    House No.- <input type="text" id="a" class="t"><br><br>
+    Colony-       <input type="text" id="c" class="t"><br><br>
+    City-               <input type="text" id="e" class="t"><br><br>
+    State-              <input type="text" id="g" class="t"><br><br>
+    Pincode-            <input type="text" id="i" class="t"><br><br>
+    </div><br><br>
+    
+    <input type="checkbox" id="ch" onclick="copy()">Please check the box if your current and parmanent address are same.<br><br>
+    
+    <div>
+    <h3>Permanent Address</h3>
+    House No.- <input type="text" id="b" class="t"><br><br>
+    Colony-      <input type="text" id="d" class="t"><br><br>
+    City-               <input type="text" id="f" class="t"><br><br>
+    State-              <input type="text" id="h" class="t"><br><br>
+    Pincode-            <input type="text" id="j" class="t"><br><br>
+    </div>
+  </script>
+   </body></html>
